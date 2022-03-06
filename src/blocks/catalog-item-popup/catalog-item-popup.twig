@@ -1,0 +1,58 @@
+<div class="catalog-item-popup" style="display:none">
+	<div class="g-popup__content catalog-item-popup__content _popup-content">
+		<h2 class="catalog-item-popup__title">выберите необходимый <span>размер обуви</span></h2>
+		<div class="catalog-item-popup__flex">
+			<div class="g-tabs catalog-item-popup__tabs _tabs-container">
+				<ul class="g-tabs__menu">
+					<li class="g-tabs__item _tab active" onclick="pegas.reviews.open(this, 1)">
+						<a class="g-tabs__link" href="javascript:void(0);">36</a>
+					</li>
+					<li class="g-tabs__item _tab" onclick="pegas.reviews.open(this, 2)">
+						<a class="g-tabs__link" href="javascript:void(0);">37</a>
+					</li>
+					<li class="g-tabs__item _tab" onclick="pegas.reviews.open(this, 3)">
+						<a class="g-tabs__link" href="javascript:void(0);">38</a>
+					</li>
+					<li class="g-tabs__item _tab" onclick="pegas.reviews.open(this, 4)">
+						<a class="g-tabs__link" href="javascript:void(0);">39</a>
+					</li>
+					<li class="g-tabs__item _tab" onclick="pegas.reviews.open(this, 5)">
+						<a class="g-tabs__link" href="javascript:void(0);">40</a>
+					</li>
+				</ul>
+				<div class="g-tabs__content open" data-tab="1">
+					<div class="catalog-item-popup__div">
+						<img src="img/cataalog-image.png" alt="" class="catalog-item-popup__img _catalog-item-popup__img">
+					</div>
+				</div>
+				<div class="g-tabs__content" data-tab="2">
+					<div class="catalog-item-popup__div">
+						<img src="img/cataalog-image.pngs" alt="" class="catalog-item-popup__img _catalog-item-popup__img">
+					</div>
+				</div>
+				<div class="g-tabs__content" data-tab="3">
+					<div class="catalog-item-popup__div">
+						<img src="img/cataalog-image.png" alt="" class="catalog-item-popup__img _catalog-item-popup__img">
+					</div>
+				</div>
+				<div class="g-tabs__content" data-tab="4">
+					<div class="catalog-item-popup__div">
+						<img src="img/cataalog-image.png" alt="" class="catalog-item-popup__img _catalog-item-popup__img">
+					</div>
+				</div>
+				<div class="g-tabs__content" data-tab="5">
+					<div class="catalog-item-popup__div">
+						<img src="img/cataalog-image.png" alt="" class="catalog-item-popup__img _catalog-item-popup__img">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="catalog-item-popup__btns">
+			<button class="catalog-item-popup__btns-magaz">Примерить в салоне</button>
+			<button class="catalog-item-popup__btns-cart" onclick="pegas.gPopup.open('catalog-item-popup-success')">
+				<span>В корзину</span>
+				{% include 'assets/img/shopping-bag1.svg' %}
+			</button>
+		</div>
+	</div>
+</div>

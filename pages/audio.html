@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>audio</title>
+	<link rel="stylesheet" type="text/css" href="./style.css?v=2">
+	<style type="text/css">
+		body .audiojs
+		{
+			background-image: none;
+			background-color: transparent;
+			box-shadow: none;
+			overflow: visible;
+			width: 100%;
+		}
+		body .audiojs .play-pause
+		{
+			width: 36px;
+			height: 36px;
+			padding: 0;
+			border: 0 none;
+		}
+		body .audiojs .play,
+		body .audiojs.playing .pause
+		{
+			background-image: url('../src/assets/img/i-play.svg');
+			background-color: transparent;
+			width: 36px;
+			height: 36px;
+			background-size: contain;
+			background-position: 0 0;
+		}
+		body .audiojs .scrubber
+		{
+			margin: 0;
+			margin-left: 10px;
+			width: calc(100% - 46px);
+			height: 36px;
+			background-color: transparent;
+			background-image: url('../src/assets/img/i-scrubber.svg');
+			background-position: left top;
+			background-repeat: repeat-x;
+			border: 0 none;
+			cursor: pointer;
+		}
+		body .audiojs .progress
+		{
+			height: 100%;
+			background-color: transparent;
+			background-image: url('../src/assets/img/i-scrubber-a.svg');
+			background-position: left top;
+			background-repeat: repeat-x;
+		}
+		body .audiojs.playing .pause
+		{
+			background-image: url('../src/assets/img/i-pause.svg');
+		}
+		body .audiojs .loaded
+		{
+			display: none;
+		}
+		body .audiojs .time
+		{
+			float: none;
+			overflow: hidden;
+			clear: both;
+			height: auto;
+			line-height: 1;
+			border: 0 none;
+			padding: 0;
+			font-size: 12px;
+			color: #828181;
+			text-shadow: none;
+			padding-top: 5px;
+			margin-left: 46px;
+		}
+		body .audiojs .time em
+		{
+			color: inherit;
+		}
+	</style>
+	<script src="../src/assets/js/audio.min.js"></script>
+	<script>
+	    audiojs.events.ready(function() {
+	        var as = audiojs.createAll();
+	    });
+	</script>
+</head>
+<body>
+	<audio preload="auto">
+	    <source src="https://raw.githubusercontent.com/kolber/audiojs/master/mp3/bensound-dubstep.mp3">
+	</audio>
+</body>
+</html>

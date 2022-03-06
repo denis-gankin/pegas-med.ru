@@ -1,0 +1,151 @@
+.address
+{
+	&__title
+	{
+		font-family: Roboto,sans-serif;
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 39px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #424242;
+		margin: 0;
+		margin-bottom: 35px;
+
+		& span 
+		{
+			color: rgba(139,203,255,.55);
+		}
+	}
+
+	background: #F2F5F8;
+	padding: 110px 0;
+	// .g-select{width: 100%;}
+	.g-select__selected
+	{
+		height: 80px;
+		line-height: 80px;
+		background: white;
+		padding: 0 40px;
+		border-radius:100px;
+		svg
+		{
+			path
+			{
+				fill:#89afce;
+			}
+		}
+	}
+	.g-select__item
+	{
+		padding: 20px 40px;
+	}
+	.g-select__list{left: 9px;}
+	.g-select__items--address
+	{
+		display: none;
+		&.active{display: block;}
+	}
+	.g-select__selected-name
+	{
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 25px;
+		color: #89AFCE;
+		text-decoration: none;
+	}
+}
+.address__descr
+{
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 33px;
+	color: #9D9D9D;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 70px;
+}
+.address__flex
+{
+	display: flex;
+	// align-items: center;
+	justify-content: space-between;
+	margin-bottom: 43px;
+}
+.yamap
+{
+	width: 100%;
+	height: auto;
+	padding: 0;
+	box-shadow: 0px 4px 4px rgba(170, 170, 170, 0.25);
+	border-radius:0 35px 35px 0;
+	overflow: hidden;
+	.ymaps-2-1-79-map
+	{
+		height: 100% !important;
+	}
+	// height: 400px;
+}
+.address__map-side
+{
+	background: #FDFDFD;
+	box-shadow: 0px 4px 4px rgba(170, 170, 170, 0.25);
+	border-radius: 35px 0 0 35px;
+	padding: 58px 77px 58px;
+	display: flex;
+	flex-direction: column;
+	h3
+	{
+		margin: 0;
+		margin-bottom: 20px;
+		font-family: $second-font;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 20px;
+		color: #89AFCE;
+	}
+	a
+	{
+		font-weight: normal;
+		display: inline-block;
+		font-size: 18px;
+		line-height: 25px;
+		color: #9D9D9D;
+		margin-bottom: 10px;
+		&.address__map-side-last{margin-bottom: 40px;}
+	}
+}
+.address__map-side-time
+{
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	color: #9D9D9D;
+	&:not(:last-child){margin-bottom: 10px;}
+}
+.address__map-side-street
+{
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	color: #9D9D9D;
+	margin-bottom: 40px;
+}
+@media (max-width: 1200px)
+{
+	.address__flex
+	{
+		flex-direction: column;
+		.address__cities
+		{
+			margin-bottom: 10px;
+		}
+	}
+}
+@media (max-width: 1000px)
+{
+	.address__map
+	{
+		// flex-direction: column;
+	}
+}

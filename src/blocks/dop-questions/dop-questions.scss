@@ -1,0 +1,44 @@
+.dop-questions
+{
+	padding: 52px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-image: url('img/dop-bg.png');
+	background-color: #89AFCE;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.dop-questions__title
+{
+	font-family: $second-font;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.dop-questions__descr
+{
+	max-width: 689px;
+	margin: 0 auto;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 150%;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+.dop-questions__btn
+{
+	height: 60px;
+	line-height: 60px;
+	padding: 0 37px;
+	&:hover
+	{
+		background: #FF5D03;
+		color: white;
+	}
+}

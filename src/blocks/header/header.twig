@@ -1,0 +1,184 @@
+<header class="header">
+	<div class="container">
+		<div class="header__row header__desctop row">
+			<a href="#" class="col-auto header__logo">
+				<img src="img/logo-pegas-head.svg" />
+			</a>
+			<div class="header__lists-block col">
+				<ul class="header__list justify-content-between">
+					<li class="header__item">
+						<label for="" class="header__item-label">
+							<input type="text" placeholder="поиск" class="header__item-input">
+							{% include 'assets/img/finder.svg' %}
+						</label>
+					</li>
+					<li class="header__item">
+						{% include 'blocks/g-select/g-select.twig' %}
+					</li>
+					<li class="header__item">
+						{% include 'assets/img/phone.svg' %}
+						<a class="header__item-link _header__item-link-phone" href="tel:74162211700">+7 (4162) 211 700</a>
+					</li>
+				</ul>
+				<ul class="header__list header__list--bottom justify-content-between">
+					<li class="header__item">
+						<a href="#" class="header__item-link">
+							каталог
+						</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__item-link">
+							кинезиоцентр
+						</a>
+					</li>
+					<li class="header__item header__item--dropDown _header__item">
+						<a href="javascript:void(0)" class="header__item-link">о компании</a>
+						{% include "assets/img/arrod-down.svg" %}
+						<ul class="header__item-list">
+							<li class="header__item-item active">
+								<a href="#">О нас</a>
+							</li>
+							<li class="header__item-item">
+								<a href="#">правила магазина</a>
+							</li>
+						</ul>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__item-link">
+							контакты
+						</a>
+					</li>
+					<li class="header__item">
+						<div class="header__item-flex">
+							<a href="#" class="header__item-basket-block">
+								{% include 'assets/img/basket.svg' %}
+								<div class="header__item-basket-counter">1</div>
+							</a>
+							<a href="#" class="header__item-basket-block">
+								{% include 'assets/img/like.svg' %}
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="header__burger col-lg-1 col-sm-1" onclick="pegas.header.showMpbMenu(this)">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="header__mobile-menu">
+				<ul class="header__mobile-menu-list">
+					<li class="header__mobile-menu-item">
+						<a href="#" class="active">КАТАЛОГ</a>
+					</li>
+					<li class="header__mobile-menu-item">
+						<a href="#">Кинезиоцентр</a>
+					</li>
+					<li class="header__mobile-menu-item" onclick="pegas.header.showDopItems(this)">
+						<a href="javascript:void(0)">О компании</a>
+						{% include "assets/img/arrod-down.svg" %}
+					</li>
+					<li class="header__mobile-shower">
+						<ul class="header__mobile-shower-list">
+							<li class="header__mobile-shower-item">
+								<a href="#">О нас</a>
+							</li>
+							<li class="header__mobile-shower-item">
+								<a href="#">правила магазина</a>
+							</li>
+						</ul>
+					</li>
+					<li class="header__mobile-menu-item">
+						<a href="#">КОНТАКТЫ</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="header__mob">
+			<div class="header__mob-top">
+				<div class="header__mob-first">
+					<div class="header__mob-burger" onclick="pegas.header.showMobMenu(this)">
+						<div class="header__mob-burger-item"></div>
+						<div class="header__mob-burger-item"></div>
+						<div class="header__mob-burger-item"></div>
+					</div>
+					<div class="header__mob-logo">
+						<img src="img/logo-mob.svg" alt="">
+						{# {% include 'assets/img/logo-mob.svg' %} #}
+					</div>
+				</div>
+				<div class="header__mob-last">
+					<div class="header__item-label header__item-label--dop" onclick="pegas.dopHeader.openFinder(this)">
+						<input type="text" class="header__item-input">
+						{% include 'assets/img/finder.svg' %}
+						<label for="" class="header__item-label-inner">
+							<input type="text" class="header__item-input-open" placeholder="введите запрос">
+							{% include 'assets/img/finder.svg' %}
+						</label>
+					</div>
+					{# <div class="header__mob-finde">
+						{% include 'assets/img/finder.svg' %}
+					</div> #}
+					<div class="header__mob-like">
+						{% include 'assets/img/like.svg' %}
+					</div>
+					<div class="header__item-basket-block header__mob-cart">
+						{% include 'assets/img/basket.svg' %}
+						<div class="header__item-basket-counter">1</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__mob-bottom">
+				<ul class="header__list">
+					<li class="header__item">
+						{% include 'blocks/g-select/g-select.twig' %}
+					</li>
+					<li class="header__item">
+						{% include 'assets/img/phone.svg' %}
+						<a class="header__item-link _header__item-link-phone" href="tel:74162211700">+7 (4162) 211 700</a>
+					</li>
+				</ul>
+				<ul class="header__list">
+					<li class="header__item">
+						<a href="#" class="header__item-link">
+							каталог
+						</a>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__item-link">
+							кинезиоцентр
+						</a>
+					</li>
+					<li class="header__item header__item--dropDown _header__item">
+						<a href="javascript:void(0)" class="header__item-link" onclick="pegas.header.showInfo(this)">о компании</a>
+						{% include "assets/img/arrod-down.svg" %}
+						<ul class="header__item-list">
+							<li class="header__item-item">
+								<a href="#">О нас</a>
+							</li>
+							<li class="header__item-item">
+								<a href="#">правила магазина</a>
+							</li>
+						</ul>
+					</li>
+					<li class="header__item">
+						<a href="#" class="header__item-link">
+							контакты
+						</a>
+					</li>
+				</ul>
+				<ul class="header__list">
+					<li class="header__item">
+						<a href="https://www.instagram.com/pegas_orto/">{% include 'assets/img/inst.svg' %}</a>
+					</li>
+					<li class="header__item">
+						<a href="https://ok.ru/profile/583969502001">{% include 'assets/img/odnok.svg' %}</a>
+					</li>
+					<li class="header__item header__item--dropDown _header__item">
+						<a href="https://www.instagram.com/bereginya_blag/">{% include 'assets/img/inst.svg' %}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>

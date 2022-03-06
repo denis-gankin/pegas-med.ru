@@ -1,0 +1,48 @@
+{# index.twig #}
+
+{% block footer %}
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__row row">
+				<div class="footer__row-links col-xl-8 col-lg-7 col-md-7">
+					<a href="#" class="footer__row-logo">
+						<img src="img/logo-pegas.svg" />
+					</a>
+					<div class="footer__row-links-block">
+						<div class="footer__row-links-block-title">основное меню</div>
+						<ul class="footer__row-links-list row">
+							<li class="footer__row-links-item col-xl-3 col-lg-3 col-md-6">
+								<a href="$"">каталог</a>
+							</li>
+							<li class="footer__row-links-item col-xl-3 col-lg-3 col-md-6">
+								<a href="$">о компании</a>
+							</li>
+							<li class="footer__row-links-item col-xl-3 col-lg-3 col-md-6">
+								<a href="$">контакты</a>
+							</li>
+							<li class="footer__row-links-item col-xl-3 col-lg-3 col-md-6">
+								<a href="$">кинезиоцентр</a>
+							</li>
+						</ul>
+						<a href="#" class="footer__row-links-privaci">Политика конфиденциальности</a>
+					</div>
+				</div>
+				<div class="footer__row-finder col-xl-4 col-lg-5 col-md-5">
+					<label for="" class="footer__row-finder-label">
+						<input type="text" class="footer__row-finder-input" placeholder="Поиск товаров">
+						{% include 'assets/img/finder.svg' %}
+					</label>
+					<div class="footer__row-finder-soc">
+						<span>Подписка на соцсети</span>
+						<div class="footer__row-finder-soc-list">
+							<a href="https://www.instagram.com/pegas_orto/">{% include 'assets/img/inst.svg' %}</a>
+							<a href="https://ok.ru/profile/583969502001">{% include 'assets/img/odnok.svg' %}</a>
+							<a href="https://www.instagram.com/bereginya_blag/">{% include 'assets/img/inst.svg' %}</a>
+						</div>
+					</div>
+					<span class="footer__row-finder-text">Ⓒ 2021, Все права защищены</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+{% endblock %}

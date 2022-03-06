@@ -1,0 +1,36 @@
+.breadcrumps
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 74px;
+}
+.breadcrumps__item
+{
+	&:not(:last-child)
+	{
+		margin-right: 25px;
+		position: relative;
+		&:after
+		{
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: -19px;
+			width: 10px;
+			height: 15px;
+			background-image: url('img/bread.svg');
+			background-repeat: no-repeat;
+			// background-size: cover;
+		}
+	}
+	a
+	{
+		font-family: $second-font;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 22px;
+		text-transform: uppercase;
+		color: #C4C4C4;
+	}
+}

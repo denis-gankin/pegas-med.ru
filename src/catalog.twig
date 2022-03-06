@@ -1,0 +1,237 @@
+{% extends "layouts/dop-lay.twig" %}
+
+{% block page %}
+	<div class="container">
+		{% include '/blocks/breadcrumps/breadcrumps.twig' %}
+		<h2 class="catalog__title about__title">ортопедическая обувь</h2>
+		{% include '/blocks/catalog-sort/catalog-sort.twig' %}
+		<div class="catalog__content row">
+			{% include '/blocks/catalog-sidebar/catalog-sidebar.twig' %}
+			<div class="catalog__content-items col-xxl-9 col-xl-8">
+				<div class="catalog__content-items-block row">
+					<div class="catalog-item-wrapper col-xl-6 col-xxl-4">
+						<div class="catalog-item catalog-item--sale">
+							<div class="catalog-item__sale">
+								15%
+							</div>
+							<div class="catalog-item__head">
+								<img src="img/cataalog-image.png" alt="">
+								<div class="catalog-item__head-btns">
+									<button class="catalog-item__head-btn catalog-item__head-btn--favorite" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/favorite.svg' %}
+									</button>
+									<button class="catalog-item__head-btn catalog-item__head-btn--cart" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/cart.svg' %}
+									</button>
+								</div>
+							</div>
+							<span class="catalog-item__name">Арт.LM-708.050</span>
+							<a href="#" class="catalog-item__link">
+								<span>Подробнее о товаре</span>
+								{% include 'assets/img/arrod-down.svg' %}
+							</a>
+							<div class="catalog-item__price">
+								<span class="catalog-item__price-sale">7475 ₽</span>
+								<span class="catalog-item__price-price">6500 ₽</span>
+							</div>
+							<div class="catalog-item__text">
+								Обувь ортопедическая малосложная <a href="#">LM ORTHOPEDIC</a> женская, цвет лак агат
+							</div>
+							<div class="catalog-item__stars">
+								{% for item in 0..5 %}
+									{% include 'assets/img/star.svg' %}
+								{% endfor %}
+							</div>
+							<button class="catalog-item__btn" onclick="pegas.catalogItem.open('catalog-item-popup',this)">Примерить в салоне</button>
+						</div>
+					</div>
+					<div class="catalog-item-wrapper col-xl-6 col-xxl-4">
+						<div class="catalog-item catalog-item--sale">
+							<div class="catalog-item__sale">
+								15%
+							</div>
+							<div class="catalog-item__head">
+								<img src="img/cataalog-image.png" alt="">
+								<div class="catalog-item__head-btns">
+									<button class="catalog-item__head-btn catalog-item__head-btn--favorite" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/favorite.svg' %}
+									</button>
+									<button class="catalog-item__head-btn catalog-item__head-btn--cart" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/cart.svg' %}
+									</button>
+								</div>
+							</div>
+							<span class="catalog-item__name">Арт.LM-708.050</span>
+							<a href="#" class="catalog-item__link">
+								<span>Подробнее о товаре</span>
+								{% include 'assets/img/arrod-down.svg' %}
+							</a>
+							<div class="catalog-item__price">
+								<span class="catalog-item__price-sale">7475 ₽</span>
+								<span class="catalog-item__price-price">6500 ₽</span>
+							</div>
+							<div class="catalog-item__text">
+								Обувь ортопедическая малосложная <a href="#">LM ORTHOPEDIC</a> женская, цвет лак агат
+							</div>
+							<div class="catalog-item__stars">
+								{% for item in 0..5 %}
+									{% include 'assets/img/star.svg' %}
+								{% endfor %}
+							</div>
+							<button class="catalog-item__btn" onclick="pegas.catalogItem.open('catalog-item-popup',this)">Примерить в салоне</button>
+						</div>
+					</div>
+					<div class="catalog-item-wrapper  col-xl-6 col-xxl-4">
+						<div class="catalog-item catalog-item--sale">
+							<div class="catalog-item__sale">
+								15%
+							</div>
+							<div class="catalog-item__head">
+								<img src="img/cataalog-image.png" alt="">
+								<div class="catalog-item__head-btns">
+									<button class="catalog-item__head-btn catalog-item__head-btn--favorite" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/favorite.svg' %}
+									</button>
+									<button class="catalog-item__head-btn catalog-item__head-btn--cart" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/cart.svg' %}
+									</button>
+								</div>
+							</div>
+							<span class="catalog-item__name">Арт.LM-708.050</span>
+							<a href="#" class="catalog-item__link">
+								<span>Подробнее о товаре</span>
+								{% include 'assets/img/arrod-down.svg' %}
+							</a>
+							<div class="catalog-item__price">
+								<span class="catalog-item__price-sale">7475 ₽</span>
+								<span class="catalog-item__price-price">6500 ₽</span>
+							</div>
+							<div class="catalog-item__text">
+								Обувь ортопедическая малосложная <a href="#">LM ORTHOPEDIC</a> женская, цвет лак агат
+							</div>
+							<div class="catalog-item__stars">
+								{% for item in 0..5 %}
+									{% include 'assets/img/star.svg' %}
+								{% endfor %}
+							</div>
+							<button class="catalog-item__btn" onclick="pegas.catalogItem.open('catalog-item-popup',this)">Примерить в салоне</button>
+						</div>
+					</div>
+				</div>
+				{% include '/blocks/catalog-banner/catalog-banner.twig' %}
+				<div class="catalog__content-items-block row">
+					<div class="catalog-item-wrapper col-xl-6 col-xxl-4">
+						<div class="catalog-item catalog-item--sale">
+							<div class="catalog-item__sale">
+								15%
+							</div>
+							<div class="catalog-item__head">
+								<img src="img/cataalog-image.png" alt="">
+								<div class="catalog-item__head-btns">
+									<button class="catalog-item__head-btn catalog-item__head-btn--favorite" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/favorite.svg' %}
+									</button>
+									<button class="catalog-item__head-btn catalog-item__head-btn--cart" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/cart.svg' %}
+									</button>
+								</div>
+							</div>
+							<span class="catalog-item__name">Арт.LM-708.050</span>
+							<a href="#" class="catalog-item__link">
+								<span>Подробнее о товаре</span>
+								{% include 'assets/img/arrod-down.svg' %}
+							</a>
+							<div class="catalog-item__price">
+								<span class="catalog-item__price-sale">7475 ₽</span>
+								<span class="catalog-item__price-price">6500 ₽</span>
+							</div>
+							<div class="catalog-item__text">
+								Обувь ортопедическая малосложная <a href="#">LM ORTHOPEDIC</a> женская, цвет лак агат
+							</div>
+							<div class="catalog-item__stars">
+								{% for item in 0..5 %}
+									{% include 'assets/img/star.svg' %}
+								{% endfor %}
+							</div>
+							<button class="catalog-item__btn" onclick="pegas.catalogItem.open('catalog-item-popup',this)">Примерить в салоне</button>
+						</div>
+					</div>
+					<div class="catalog-item-wrapper col-xl-6 col-xxl-4">
+						<div class="catalog-item catalog-item--sale">
+							<div class="catalog-item__sale">
+								15%
+							</div>
+							<div class="catalog-item__head">
+								<img src="img/cataalog-image.png" alt="">
+								<div class="catalog-item__head-btns">
+									<button class="catalog-item__head-btn catalog-item__head-btn--favorite" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/favorite.svg' %}
+									</button>
+									<button class="catalog-item__head-btn catalog-item__head-btn--cart" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/cart.svg' %}
+									</button>
+								</div>
+							</div>
+							<span class="catalog-item__name">Арт.LM-708.050</span>
+							<a href="#" class="catalog-item__link">
+								<span>Подробнее о товаре</span>
+								{% include 'assets/img/arrod-down.svg' %}
+							</a>
+							<div class="catalog-item__price">
+								<span class="catalog-item__price-sale">7475 ₽</span>
+								<span class="catalog-item__price-price">6500 ₽</span>
+							</div>
+							<div class="catalog-item__text">
+								Обувь ортопедическая малосложная <a href="#">LM ORTHOPEDIC</a> женская, цвет лак агат
+							</div>
+							<div class="catalog-item__stars">
+								{% for item in 0..5 %}
+									{% include 'assets/img/star.svg' %}
+								{% endfor %}
+							</div>
+							<button class="catalog-item__btn" onclick="pegas.catalogItem.open('catalog-item-popup',this)">Примерить в салоне</button>
+						</div>
+					</div>
+					<div class="catalog-item-wrapper col-xl-6 col-xxl-4">
+						<div class="catalog-item catalog-item--sale">
+							<div class="catalog-item__sale">
+								15%
+							</div>
+							<div class="catalog-item__head">
+								<img src="img/cataalog-image.png" alt="">
+								<div class="catalog-item__head-btns">
+									<button class="catalog-item__head-btn catalog-item__head-btn--favorite" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/favorite.svg' %}
+									</button>
+									<button class="catalog-item__head-btn catalog-item__head-btn--cart" onclick="pegas.catalogItem.add(this)">
+										{% include 'assets/img/cart.svg' %}
+									</button>
+								</div>
+							</div>
+							<span class="catalog-item__name">Арт.LM-708.050</span>
+							<a href="#" class="catalog-item__link">
+								<span>Подробнее о товаре</span>
+								{% include 'assets/img/arrod-down.svg' %}
+							</a>
+							<div class="catalog-item__price">
+								<span class="catalog-item__price-sale">7475 ₽</span>
+								<span class="catalog-item__price-price">6500 ₽</span>
+							</div>
+							<div class="catalog-item__text">
+								Обувь ортопедическая малосложная <a href="#">LM ORTHOPEDIC</a> женская, цвет лак агат
+							</div>
+							<div class="catalog-item__stars">
+								{% for item in 0..5 %}
+									{% include 'assets/img/star.svg' %}
+								{% endfor %}
+							</div>
+							<button class="catalog-item__btn" onclick="pegas.catalogItem.open('catalog-item-popup',this)">Примерить в салоне</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include '/blocks/catalog-item-popup/catalog-item-popup.twig' %}
+	{% include '/blocks/catalog-item-popup-success/catalog-item-popup-success.twig' %}
+{% endblock %}

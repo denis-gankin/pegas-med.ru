@@ -1,0 +1,158 @@
+<div class="g-tabs g-tabs-border _tabs-container">
+	<ul class="g-tabs__menu">
+		<li class="g-tabs__item _tab active" onclick="pegas.reviews.open(this, 1)">
+			<a class="g-tabs__link" href="javascript:void(0);">описание товара</a>
+		</li>
+		<li class="g-tabs__item _tab" onclick="pegas.reviews.open(this, 2)">
+			<a class="g-tabs__link" href="javascript:void(0);">документация</a>
+		</li>
+		<li class="g-tabs__item _tab" onclick="pegas.reviews.open(this, 3)">
+			<a class="g-tabs__link" href="javascript:void(0);">отзывы</a>
+		</li>
+	</ul>
+	<div class="g-tabs__content open" data-tab="1">
+		<p class="g-tabs__content-descr">Трикотаж модельного ряда duomed – экономичное решение проблем с венами нижних конечностей. Он отличается высокой медицинской эффективностью, удобством и комфортом при оптимальном соотношении цены и качества. Вниманию пользователя представлен выбор пяти размеров и двух стандартных цветов.</p>
+		<div class="g-tabs-border__flex">
+			<div class="g-tabs-border__flex-text">
+				<h2 class="g-tabs-border__flex-text-title">Показания к применению:</h2>
+				<ul class="g-tabs-border__flex-list">
+					<li class="g-tabs-border__flex-litem">- «Синдром тяжёлых ног»;</li>
+					<li class="g-tabs-border__flex-litem">- Склонность к отёкам;</li>
+					<li class="g-tabs-border__flex-litem">- Профилактика варикозной болезни у беременных;</li>
+					<li class="g-tabs-border__flex-litem">- Ретикулярный (сетчатый) варикоз, телеангиэктазии;</li>
+					<li class="g-tabs-border__flex-litem">- Функциональные флебопатии;</li>
+					<li class="g-tabs-border__flex-litem">- Профилактика тромбоза глубоких вен.</li>
+				</ul>
+				<h2 class="g-tabs-border__flex-text-title">Абсолютные противопоказания:</h2>
+				<ul class="g-tabs-border__flex-list">
+					<li class="g-tabs-border__flex-litem">- Хронические облитерирующие заболевания артерий нижних конечностей <br> (регионарное систолическое давление на a.tibialis posterior ниже 80 мм рт. ст.);</li>
+					<li class="g-tabs-border__flex-litem">- Тяжёлые формы диабетической полинейропатии и ангиопатии;</li>
+					<li class="g-tabs-border__flex-litem">- Декомпенсированная сердечно-лёгочная недостаточность;</li>
+					<li class="g-tabs-border__flex-litem">- Трофические язвы невенозной этиологии;</li>
+					<li class="g-tabs-border__flex-litem">- Острая инфекция мягких тканей;</li>
+					<li class="g-tabs-border__flex-litem">- Септический флебит.</li>
+				</ul>
+				<h2 class="g-tabs-border__flex-text-title">Относительные противопоказания:</h2>
+				<ul class="g-tabs-border__flex-list">
+					<li class="g-tabs-border__flex-litem">- Индивидуальная непереносимость материала;</li>
+					<li class="g-tabs-border__flex-litem">- Нарушение чувствительности.</li>
+				</ul>
+			</div>
+			<div class="g-tabs-border__flex-banner">
+				<div class="g-tabs-border__flex-banner-name">
+					<span>С заботой о Вас</span>
+					{% include 'assets/img/heart.svg' %}
+				</div>
+				<div class="g-tabs-border__flex-banner-text">
+					При покупке товаров из <a href="#">салонов “Пегас”</a> скидка <span>5 %</span> на любую процедуру от <a href="#">кинезиоцентра “Берегиня”*</a>
+				</div>
+				<span class="g-tabs-border__flex-banner-dop">*при предъявлении чека на покупку</span>
+			</div>
+		</div>
+		<p class="g-tabs__content-descr">Специальные технологии вязки поддерживают оптимальный водный и температурный балансы кожи. Серебро в структуре нитей обеспечивает антибактериальный и антигрибковый эффекты в носочной части и борется с возникновением неприятного запаха. Трикотаж хорошо растягивается в продольном и поперечном направлениях, что позволяет добиться правильного распределения изделия на ноге, а также лёгкости его надевания и снимания без образования складок.</p>
+	</div>
+	<div class="g-tabs__content" data-tab="2">
+		<div class="g-tabs-border__flex">
+			<a href="#" class="g-tabs-border__flex-link" download>
+				{% include 'assets/img/pdf.svg' %}
+				<div class="g-tabs-border__flex-block">
+					<span class="g-tabs-border__flex-text">Инструкция по эксплуатации</span>
+					<span class="g-tabs-border__flex-size">Размер 15 Мб</span>
+				</div>
+			</a>
+			<a href="#" class="g-tabs-border__flex-link" download>
+				{% include 'assets/img/pdf.svg' %}
+				<div class="g-tabs-border__flex-block">
+					<span class="g-tabs-border__flex-text">Регистрационное удостоверение</span>
+					<span class="g-tabs-border__flex-size">Размер 15 Мб</span>
+				</div>
+			</a>
+			<a href="#" class="g-tabs-border__flex-link" download>
+				{% include 'assets/img/pdf.svg' %}
+				<div class="g-tabs-border__flex-block">
+					<span class="g-tabs-border__flex-text">Декларация о соответствии</span>
+					<span class="g-tabs-border__flex-size">Размер 15 Мб</span>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="g-tabs__content" data-tab="3">
+		<div class="g-tabs-border__flex g-tabs-border__flex--rev">
+			<div class="g-tabs-border__flex-logo">
+				<div class="g-tabs-border__flex-logo-name">Аврора <br>Кириченко</div>
+				<div class="g-tabs-border__flex-logo-image">
+					<img src="img/pol.png" alt="">
+					<div class="g-tabs-border__flex-logo-inner">
+						<span>5.0</span>
+						{% include 'assets/img/star.svg' %}
+					</div>
+				</div>
+			</div>
+			<div class="g-tabs-border__flex-information">
+				<h2 class="g-tabs-border__flex-information-name">Достоинства</h2>
+				<p class="g-tabs-border__flex-information-descr">Стало гораздо легче</p>
+				<h2 class="g-tabs-border__flex-information-name">недостатки</h2>
+				<p class="g-tabs-border__flex-information-descr">Не нашла</p>
+				<h2 class="g-tabs-border__flex-information-name">комментарии</h2>
+				<p class="g-tabs-border__flex-information-descr">Чулки я носила 9 лет, с ними ничего не случилось, правда одевала с обычным носочком, чтобы не повредить. Резинка (силиконовая основа) представляла собой несколько полосок. Спустя 9 лет решила заказать новые двух цветов. Все понравилось, пришло то, что ждала</p>
+				<div class="g-tabs-border__flex-information-text">
+					<h2 class="g-tabs-border__flex-information-name">комментарии</h2>
+					<p class="g-tabs-border__flex-information-descr">Спасибо за Ваш комментарий, стараемся держать качество на высшем уровне! Будьте здоровы!</p>
+				</div>
+			</div>
+		</div>
+		<div class="g-tabs-border__flex g-tabs-border__flex--rev">
+			<div class="g-tabs-border__flex-logo">
+				<div class="g-tabs-border__flex-logo-name">Аврора <br>Кириченко</div>
+				<div class="g-tabs-border__flex-logo-image">
+					<img src="img/pol.png" alt="">
+					<div class="g-tabs-border__flex-logo-inner">
+						<span>5.0</span>
+						{% include 'assets/img/star.svg' %}
+					</div>
+				</div>
+			</div>
+			<div class="g-tabs-border__flex-information">
+				<h2 class="g-tabs-border__flex-information-name">Достоинства</h2>
+				<p class="g-tabs-border__flex-information-descr">Стало гораздо легче</p>
+				<h2 class="g-tabs-border__flex-information-name">недостатки</h2>
+				<p class="g-tabs-border__flex-information-descr">Не нашла</p>
+				<h2 class="g-tabs-border__flex-information-name">комментарии</h2>
+				<p class="g-tabs-border__flex-information-descr">Чулки я носила 9 лет, с ними ничего не случилось, правда одевала с обычным носочком, чтобы не повредить. Резинка (силиконовая основа) представляла собой несколько полосок. Спустя 9 лет решила заказать новые двух цветов. Все понравилось, пришло то, что ждала</p>
+				<div class="g-tabs-border__flex-information-text">
+					<h2 class="g-tabs-border__flex-information-name">комментарии</h2>
+					<p class="g-tabs-border__flex-information-descr">Спасибо за Ваш комментарий, стараемся держать качество на высшем уровне! Будьте здоровы!</p>
+				</div>
+			</div>
+		</div>
+		<div class="g-tabs-border__flex g-tabs-border__flex--rev">
+			<div class="g-tabs-border__flex-logo">
+				<div class="g-tabs-border__flex-logo-name">Аврора <br>Кириченко</div>
+				<div class="g-tabs-border__flex-logo-image">
+					<img src="img/pol.png" alt="">
+					<div class="g-tabs-border__flex-logo-inner">
+						<span>5.0</span>
+						{% include 'assets/img/star.svg' %}
+					</div>
+				</div>
+			</div>
+			<div class="g-tabs-border__flex-information">
+				<h2 class="g-tabs-border__flex-information-name">Достоинства</h2>
+				<p class="g-tabs-border__flex-information-descr">Стало гораздо легче</p>
+				<h2 class="g-tabs-border__flex-information-name">недостатки</h2>
+				<p class="g-tabs-border__flex-information-descr">Не нашла</p>
+				<h2 class="g-tabs-border__flex-information-name">комментарии</h2>
+				<p class="g-tabs-border__flex-information-descr">Чулки я носила 9 лет, с ними ничего не случилось, правда одевала с обычным носочком, чтобы не повредить. Резинка (силиконовая основа) представляла собой несколько полосок. Спустя 9 лет решила заказать новые двух цветов. Все понравилось, пришло то, что ждала</p>
+				<div class="g-tabs-border__flex-information-text">
+					<h2 class="g-tabs-border__flex-information-name">комментарии</h2>
+					<p class="g-tabs-border__flex-information-descr">Спасибо за Ваш комментарий, стараемся держать качество на высшем уровне! Будьте здоровы!</p>
+				</div>
+			</div>
+		</div>
+		<div class="g-tabs-border__btns">
+			<button class="g-tabs-border__btns-more">Показать еще</button>
+			<button class="g-tabs-border__btns-rev" onclick="pegas.gPopup.open('detail-rev-popup')">Оставить отзыв</button>
+		</div>
+		{% include '/blocks/navigation/navigation.twig' %}
+	</div>
+</div>

@@ -1,0 +1,36 @@
+<div class="catalog-item-wrapper col-md-6 col-lg-4 col-xl-3">
+	<div class="catalog-item catalog-item--sale">
+		<div class="catalog-item__sale">
+			15%
+		</div>
+		<div class="catalog-item__head">
+			<img src="img/cataalog-image.png" alt="">
+			<div class="catalog-item__head-btns">
+				<button class="catalog-item__head-btn catalog-item__head-btn--favorite" onclick="pegas.catalogItem.add(this)">
+					{% include 'assets/img/favorite.svg' %}
+				</button>
+				<button class="catalog-item__head-btn catalog-item__head-btn--cart" onclick="pegas.catalogItem.add(this)">
+					{% include 'assets/img/cart.svg' %}
+				</button>
+			</div>
+		</div>
+		<span class="catalog-item__name">Арт.LM-708.050</span>
+		<a href="#" class="catalog-item__link">
+			<span>Подробнее о товаре</span>
+			{% include 'assets/img/arrod-down.svg' %}
+		</a>
+		<div class="catalog-item__price">
+			<span class="catalog-item__price-sale">7475 ₽</span>
+			<span class="catalog-item__price-price">6500 ₽</span>
+		</div>
+		<div class="catalog-item__text">
+			Обувь ортопедическая малосложная <a href="#">LM ORTHOPEDIC</a> женская, цвет лак агат
+		</div>
+		<div class="catalog-item__stars">
+			{% for item in 0..5 %}
+				{% include 'assets/img/star.svg' %}
+			{% endfor %}
+		</div>
+		<button class="catalog-item__btn" onclick="pegas.catalogItem.open('catalog-item-popup',this)">Примерить в салоне</button>
+	</div>
+</div>

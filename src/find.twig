@@ -1,0 +1,24 @@
+{% extends "layouts/dop-lay.twig" %}
+
+{% block page %}
+	<div class="container">
+		{% include '/blocks/breadcrumps/breadcrumps.twig' %}
+		<h2 class="about__title">РЕЗУЛЬТАТЫ ПО ЗАПРОСУ <span>“ортопедическая обувь”</span></h2>
+		<div class="find__error">
+			<p class="find__error-text">По вашему запросу ничего не найдено</p>
+			<label class="find__error-label">
+				<input type="text">
+				{% include 'assets/img/finder.svg' %}
+			</label>
+			<span>Проверьте, правильно ли введен запрос, нет ли опечаток</span>
+			<span>Попробуйте ввести схожий запрос или синоним</span>
+		</div>
+		<div class="catalog-list row">
+			{% for item in 0..4 %}
+				{% include '/blocks/catalog-item/catalog-item.twig' %}
+			{% endfor %}
+		</div>
+		{% include '/blocks/catalog-item-popup/catalog-item-popup.twig' %}
+		{% include '/blocks/catalog-item-popup-success/catalog-item-popup-success.twig' %}
+	</div>
+{% endblock %}

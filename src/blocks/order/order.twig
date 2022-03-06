@@ -1,0 +1,195 @@
+<div class="order _tabs-container">
+	<h2 class="cart__title">оформление заказа</h2>
+	<form class="questions__rows_" onsubmit="return pegas.questions.submit(this)">
+		<div class="order__flex_ detail-information__params">
+			<div class="row">
+				<div class="col-xl-6">
+					<h2 class="order__title">Заполните  контактные данные</h2>
+					<div class="row">
+						<div class="col-md-6">
+							<label class="questions__label _field" data-call="empty">
+								<input type="text" placeholder="Введите имя">
+								<div class="err_msg _error-msg">Error: invalid name</div>
+							</label>
+						</div>
+						<div class="col-md-6">
+							<label class="questions__label _field" data-code="phone" data-call="empty phone">
+								<input type="text" placeholder="Введите телефон" class="_phone-mask">
+								<div class="err_msg _error-msg">Error: invalid name</div>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3">
+					<label class="questions__label _field" data-call="empty">
+						<h2 class="order__title">Ваш город</h2>
+						<input type="text" placeholder="Введите город">
+						<div class="err_msg _error-msg">Error: invalid name</div>
+					</label>
+				</div>
+				<div class="col-xl-3">
+					<div class="g-select _select">
+						<h2 class="order__title">Способ доставки</h2>
+						<input type="hidden" class="_selected-value" />
+						<div class="g-select__selected" onclick="pegas.gSelect.toggle(this)">
+							<div class="g-select__selected-name _selected-text">Самовывоз в магазине</div>
+							<div class="g-select__arrow">
+								{% include "assets/img/arrod-down.svg" %}
+							</div>
+						</div>
+						<div class="g-select__list _options">
+							<ul class="g-select__items">
+								<li data-value="code-Самовывоз" class="g-select__item _option g-select__item--active" onclick="pegas.gSelect.selecttItem(this)">Самовывоз в магазине</li>
+								<li data-value="code-Курьером" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">Курьером по г. Благовещенск</li>
+								<li data-value="code-Доставка" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">Доставка Почтой России</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		<div class="g-tabs__content" data-tab="2">
+			<div class="order__inner-flex_">
+				<div class="row mb-5">
+					<div class="col-xl-6">
+						<label class="questions__label _field">
+							<h2 class="order__title">Введите улицу</h2>
+							<input type="text">
+						</label>
+					</div>
+					<div class="col-lg-2">
+						<label class="questions__label _field">
+							<h2 class="order__title">№ дома</h2>
+							<input type="text">
+						</label>
+					</div>
+					<div class="col-lg-2">
+						<label class="questions__label _field">
+							<h2 class="order__title">Корпус</h2>
+							<input type="text">
+						</label>
+					</div>
+					<div class="col-lg-2">
+						<label class="questions__label _field">
+							<h2 class="order__title">Квартира</h2>
+							<input type="text">
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8">
+						<label class="questions__label _field">
+							<h2 class="order__title">Комментарии к заказу</h2>
+							<input type="text">
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="g-tabs__content" data-tab="3">
+			<div class="order__inner-flex_">
+				<div class="row mb-5">
+					<div class="col-xl-6">
+						<label class="questions__label _field">
+							<h2 class="order__title">Введите улицу</h2>
+							<input type="text">
+						</label>
+					</div>
+					<div class="col-lg-2">
+						<label class="questions__label _field">
+							<h2 class="order__title">№ дома</h2>
+							<input type="text">
+						</label>
+					</div>
+					<div class="col-lg-2">
+						<label class="questions__label _field">
+							<h2 class="order__title">Корпус</h2>
+							<input type="text">
+						</label>
+					</div>
+					<div class="col-lg-2">
+						<label class="questions__label _field">
+							<h2 class="order__title">Квартира</h2>
+							<input type="text">
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8">
+						<label class="questions__label _field">
+							<h2 class="order__title">Комментарии к заказу</h2>
+							<input type="text">
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="g-tabs g-tabs-border pt-5">
+			<ul class="g-tabs__menu">
+				<li class="g-tabs__item _tab active" onclick="pegas.reviews.open(this, 1)">
+					<a class="g-tabs__link" href="javascript:void(0);">самовывоз</a>
+				</li>
+				<li class="g-tabs__item _tab" onclick="pegas.reviews.open(this, 2)">
+					<a class="g-tabs__link" href="javascript:void(0);">курьером</a>
+				</li>
+				<li class="g-tabs__item _tab" onclick="pegas.reviews.open(this, 3)">
+					<a class="g-tabs__link" href="javascript:void(0);">почтой россии</a>
+				</li>
+			</ul>
+			<div class="g-tabs__content open" data-tab="1">
+				<p class="g-tabs__content-descr">В случае, если Вы хотите самостоятельно забрать Ваш заказ в магазине, Вы можете воспользоваться БЕСПЛАТНОЙ услугой самовывоза. Перед выкупом заказа, обязательно дождитесь звонка от сотрудника магазина, который сообщит Вам все подробности по Вашему заказу. Заказ доступен для самовывоза в течение 3 дней с момента подтверждения сотрудником магазина наличия заказанного товара. Адреса магазинов самовывоза можно посмотреть в Контактах</p>
+			</div>
+			<div class="g-tabs__content" data-tab="2">
+				<p class="g-tabs__content-descr">Доставка собственной курьерской службой доставки осуществляется только по Благовещенску:</p>
+				<ul class="g-tabs__content-list">
+					<li class="g-tabs__content-item">
+						<span>БЕСПЛАТНО</span> при сумме заказа более 3500 руб.;
+					</li>
+					<li class="g-tabs__content-item">
+						<span>250 руб.</span> при сумме заказа менее 3500 руб.
+					</li>
+				</ul>
+				<p class="g-tabs__content-descr">При полном отказе от заказа - курьеру оплачивается доставка в размере 250 руб.</p>
+				<p class="g-tabs__content-descr">
+					Оформленные заказы доставляются по вторникам и пятницам. При возможности и незанятости курьерской службы, заказ может быть доставлен раньше по согласованию 
+					с администратором интернет-магазина.<br>
+					Доставка товара происходит с 10:00 до 17:00 часов. По предварительной договоренности с покупателем время доставки может быть изменено.
+					Обращаем Ваше внимание,<br>
+					что при отсутствии клиента по согласованному адресу и времени доставки, время ожидания курьера составляет не более 10 минут.
+				</p>
+			</div>
+			<div class="g-tabs__content" data-tab="3">
+				<p class="g-tabs__content-descr">Доставка в регионы России может осуществляется Почтой России наложенным платежом.</p>
+				<ul class="g-tabs__content-list">
+					<li class="g-tabs__content-item">
+						При сумме заказа <span>более 4000 руб.</span> доставка Почтой России осуществляется БЕСПЛАТНО.
+					</li>
+					<li class="g-tabs__content-item">
+						При сумме заказа <span>менее 4000 руб.</span> стоимость доставки Почтой России составит 400 руб.
+					</li>
+				</ul>
+				<p class="g-tabs__content-descr">При полном отказе от заказа - курьеру оплачивается доставка в размере 250 руб.</p>
+				<p class="g-tabs__content-descr">
+					После формирования заказа с Вами свяжется администратор интернет-магазина «Pegas-med» для уточнения всех деталей заказа.<br>
+					Подробности о доставке Почтой России наложенным платежом: <a href="https://pochta.ru/support/post-rules/cash-on-delivery">https://pochta.ru/support/post-rules/cash-on-delivery.</a> Обращаем внимание, что при получении заказа Почтой России дополнительно взимается комиссия 
+					за наложенный платеж.
+				</p>
+			</div>
+		</div>
+		<div class="oreder__submit">
+			<input type="submit" class="questions__btn" value="Отправить">
+			<label class="g-checkbox g-checkbox--label _field" data-call="checked">
+				<input type="checkbox" name="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<div class="g-checkbox__text">
+						Нажимая на кнопку, вы подтверждаете своё совершеннолетие, соглашаетесь на обработку персональных данных <br>в соответствии  с <a href="#">политикой конфиденциальности</a>, а также ознакомились с <a href="#">правилами магазина</a>
+					</div>
+				</div>
+			</label>
+		</div>
+	</form>
+</div>

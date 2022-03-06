@@ -1,0 +1,144 @@
+<div class="detail-information">
+	<div class="detail-information__image">
+		<img class="detail-information__logo" src="img/detail-logo.png" alt="">
+		<img class="detail-information__big"  src="img/legens.png" alt="">
+	</div>
+	<div class="detail-information__info">
+		<h2 class="detail-information__title">
+			Компрессионные чулки <a href="#">duomed</a> 1 класс компрессии с открытым носком и резинкой на силиконовой основе
+		</h2>
+		<p class="detail-information__descr">Арт.DO161-0 - S</p>
+		<div class="detail-information__rev">
+			<div class="detail-information__stars">
+				{% include 'assets/img/star.svg' %}
+				{% include 'assets/img/star.svg' %}
+				{% include 'assets/img/star.svg' %}
+				{% include 'assets/img/star.svg' %}
+				{% include 'assets/img/star.svg' %}
+			</div>
+			<a href="#"><span>5</span> отзывов</a>
+		</div>
+		<div class="detail-information__price">
+			<div class="detail-information__price-count">5 000 руб.</div>
+			<div class="detail-information__price-sertific">
+				{% include 'assets/img/quality1.svg' %}
+				<span>Товар сертифицирован</span>
+			</div>
+		</div>
+		<ul class="detail-information__list">
+			<li class="detail-information__item">
+				<span>Материал:</span>
+				<span>Полиамид - 57% / Эластан - 43%</span>
+			</li>
+			<li class="detail-information__item">
+				<span>Особенности:</span>
+				<span>1 класс компрессии, открытый</span>
+			</li>
+			<li class="detail-information__item">
+				<span>Страна-производитель:</span>
+				<span>Германия</span>
+			</li>
+			<li class="detail-information__item">
+				<span>Для кого:</span>
+				<span>Мужчины/женщины</span>
+			</li>
+			<li class="detail-information__item">
+				<span>Бренд:</span>
+				<span>Medi</span>
+			</li>
+		</ul>
+		<div class="detail-information__params">
+			<span class="detail-information__params-name">Длина</span>
+			<div class="g-select _select">
+				<input type="hidden" class="_selected-value" />
+				<div class="g-select__selected" onclick="pegas.gSelect.toggle(this)">
+					<div class="g-select__selected-name _selected-text">Стандартная</div>
+					<div class="g-select__arrow">
+						{% include "assets/img/arrod-down.svg" %}
+					</div>
+				</div>
+				<div class="g-select__list _options">
+					<ul class="g-select__items">
+						<li data-value="code-Благовещенск" class="g-select__item _option g-select__item--active" onclick="pegas.gSelect.selecttItem(this)">Стандартная</li>
+						<li data-value="code-Благовещенск" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">полустандартная</li>
+						<li data-value="code-Благовещенск" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">тестовая</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="detail-information__params">
+			<div class="detail-information__params-head">
+				<span class="detail-information__params-name">Размер</span>
+				<button class="detail-information__params-btn" onclick="pegas.gPopup.open('detail-information-popup')">Таблица размеров</button>
+			</div>
+			<div class="detail-information__params-flex">
+				<label class="g-radio g-radio--btn">
+					<input type="radio" name="btn" class="g-radio__input">
+					<div class="g-radio__body">
+						<span class="g-radio__box"></span>
+						<span class="g-radio__text">S</span>
+					</div>
+				</label>
+				<label class="g-radio g-radio--btn">
+					<input type="radio" name="btn" class="g-radio__input">
+					<div class="g-radio__body">
+						<span class="g-radio__box"></span>
+						<span class="g-radio__text">M</span>
+					</div>
+				</label>
+				<label class="g-radio g-radio--btn">
+					<input type="radio" name="btn" class="g-radio__input">
+					<div class="g-radio__body">
+						<span class="g-radio__box"></span>
+						<span class="g-radio__text">L</span>
+					</div>
+				</label>
+				<label class="g-radio g-radio--btn">
+					<input type="radio" name="btn" class="g-radio__input">
+					<div class="g-radio__body">
+						<span class="g-radio__box"></span>
+						<span class="g-radio__text">XL</span>
+					</div>
+				</label>
+				<label class="g-radio g-radio--btn">
+					<input type="radio" name="btn" class="g-radio__input">
+					<div class="g-radio__body">
+						<span class="g-radio__box"></span>
+						<span class="g-radio__text">XXL</span>
+					</div>
+				</label>
+			</div>
+		</div>
+		<div class="detail-information__params">
+			<span class="detail-information__params-name">Выберите цвет</span>
+			<div class="detail-information__params-flex detail-information__params-flex--color">
+				<label class="g-radio g-radio--btn">
+					<input type="radio" name="color" class="g-radio__input">
+					<div class="g-radio__body">
+						<span class="g-radio__box"></span>
+						<span class="g-radio__text"></span>
+					</div>
+				</label>
+				<label class="g-radio g-radio--btn">
+					<input type="radio" name="color" class="g-radio__input">
+					<div class="g-radio__body">
+						<span class="g-radio__box"></span>
+						<span class="g-radio__text"></span>
+					</div>
+				</label>
+			</div>
+		</div>
+		<div class="detail-information__counter">
+			<div class="detail-information__count _info-count">
+				<button onclick="pegas.detailInformation.remove(this)">-</button>
+				<span class="_count">1</span>
+				<button onclick="pegas.detailInformation.add(this)">+</button>
+			</div>
+			<button class="detail-information__magaz">Примерить в салоне</button>
+			<button class="detail-information__cart">
+				<span>В корзину</span>
+				{% include 'assets/img/shopping-bag1.svg' %}
+			</button>
+		</div>
+	</div>
+</div>

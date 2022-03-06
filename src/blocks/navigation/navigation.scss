@@ -1,0 +1,22 @@
+.navigation__list
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navigation__item
+{
+	&:not(:last-child){margin-right: 50px;}
+	a
+	{
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 33px;
+		color: #9D9D9D;
+		&:hover
+		{
+			color: #89AFCE;
+		}
+	}
+	&.active{a{color: #89AFCE;}}
+}

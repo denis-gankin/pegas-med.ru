@@ -1,0 +1,29 @@
+<div class="catalog-sort row">
+	<div class="catalog-sort__first row col-xxl-6 col-xl-8 col-md-6">
+		<a href="#" class="catalog-sort__btn col-xl-6 col-lg-6 col-md-6">Каталог</a>
+		<label class="catalog-sort__label col-xl-6 col-lg-6">
+			<input type="text" placeholder="Поиск товара">
+			{% include 'assets/img/finder.svg' %}
+		</label>
+	</div>
+	<div class="catalog-sort__flex col-xxl-5 col-xl-4">
+		<span class="d-none d-xxl-block">Сортировать</span>
+		<div class="g-select _select">
+			<input type="hidden" class="_selected-value" />
+			<div class="g-select__selected" onclick="pegas.gSelect.toggle(this)">
+				<div class="g-select__selected-name _selected-text">Сначала популярные</div>
+				<div class="g-select__arrow">
+					{% include "assets/img/arrod-down.svg" %}
+				</div>
+			</div>
+			<div class="g-select__list _options">
+				<ul class="g-select__items">
+					<li data-value="code-popular" class="g-select__item _option g-select__item--active" onclick="pegas.gSelect.selecttItem(this)">Сначала популярные</li>
+					<li data-value="code-lowerPrice" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">По ценам от  низких</li>
+					<li data-value="code-highPrice" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">По ценам от высоких</li>
+					<li data-value="code-mark" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">По оценке покупателей</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

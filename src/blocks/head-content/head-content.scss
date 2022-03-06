@@ -1,0 +1,110 @@
+.head-content
+{
+	background: rgba(139, 203, 255, 0.55);
+	padding: 80px 0;
+	padding-top: 300px;
+	background-image: url('./img/shoose.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 110px;
+	background-position: center;
+}
+.head-content__links
+{
+	a
+	{
+		display: block;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		&:not(:last-child)
+		{
+			margin-bottom: 10px;
+		}
+	}
+}
+.head-content__row
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.head-content__content
+{
+	display: flex;
+	justify-content: end;
+	flex-wrap:wrap;
+	grid-gap: 35px;
+
+	& + .head-content__content 
+	{
+		margin-top: 35px;
+	}
+}
+.head-content__content-link
+{
+	width: 450px;
+	height: 135px;
+	line-height: 135px;
+	flex-basis: 48%;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 200px;
+	font-family: $second-font;
+	font-weight: 500;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	transition: .2s;
+	&.active
+	{
+		background: #89AFCE;
+		color: #FFFFFF;
+	}
+	&:hover
+	{
+		background: #89AFCE;
+		transition: .2s;
+		color: #FFFFFF;
+	}
+
+	@media (max-width: 400px)
+	{
+		width: 100%;
+	}
+}
+@media (max-width: 1500px)
+{
+	// .head-content__links
+	// {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	margin-bottom: 20px;
+	// 	justify-content: center;
+	// 	padding: 0;
+	// 	a
+	// 	{
+	// 		&:not(:last-child)
+	// 		{
+	// 			margin-right: 20px;
+	// 			margin-bottom: 0px;
+	// 		}
+	// 	}
+	// }
+}
+@media (max-width: 1200px)
+{
+	.head-content__links{display: none;}
+	.head-content
+	{
+		padding-top: 40px;
+	}
+	.head-content__row
+	{
+		flex-direction: column;
+	}
+	.head-content__content-link{flex-basis: 100%;}
+	.head-content__links
+	{
+
+	}
+}

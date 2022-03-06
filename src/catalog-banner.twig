@@ -1,0 +1,17 @@
+{% extends "layouts/dop-lay.twig" %}
+
+{% block page %}
+	<div class="container">
+		{% include '/blocks/breadcrumps/breadcrumps.twig' %}
+		<div class="catalog-banner__list row">
+			{% for item in 0..2 %}
+				{% include '/blocks/catalog-banner-item/catalog-banner-item.twig' %}
+			{% endfor %}
+			{% include '/blocks/catalog-banner-item/catalog-banner-item.twig' %}
+			{% include '/blocks/catalog-banner-slider/catalog-banner-slider.twig' %}
+			{% for item in 0..2 %}
+				{% include '/blocks/catalog-banner-item/catalog-banner-item.twig' %}
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

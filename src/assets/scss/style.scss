@@ -1,0 +1,196 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+/* mixins */
+@import 'base/mixins.scss';
+
+/* base */
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/default';
+
+/* blocks */
+ @import 'blocks/header/header';
+ @import 'blocks/dop-header/dop-header';
+ @import 'blocks/footer/footer';
+ @import 'blocks/g-select/g-select';
+ @import 'blocks/head-content/head-content';
+ @import 'blocks/advantages/advantages';
+ @import 'blocks/reviews/reviews';
+ @import 'blocks/slider/owl.carousel.min';
+ @import 'blocks/g-popup/g-popup';
+ @import 'blocks/partners/partners';
+ @import 'blocks/address/address';
+ @import 'blocks/breadcrumps/breadcrumps';
+ @import 'blocks/contacts/contacts';
+ @import 'blocks/questions/questions';
+ @import 'blocks/about-work/about-work';
+ @import 'blocks/about-advantages/about-advantages';
+ @import 'blocks/princips/princips';
+ @import 'blocks/dop-questions/dop-questions';
+ @import 'blocks/questions-popup/questions-popup';
+ @import 'blocks/catalog-item/catalog-item';
+ @import 'blocks/catalog-item-popup/catalog-item-popup';
+ @import 'blocks/catalog-item-popup-success/catalog-item-popup-success';
+ @import 'blocks/catalog-banner-item/catalog-banner-item';
+ @import 'blocks/catalog-banner-slider/catalog-banner-slider';
+ @import 'blocks/catalog-sort/catalog-sort';
+ @import 'blocks/catalog-sidebar/catalog-sidebar';
+ @import 'blocks/catalog-banner/catalog-banner';
+ @import 'blocks/detail-information/detail-information';
+ @import 'blocks/detail-information-popup/detail-information-popup';
+ @import 'blocks/g-tabs-border/g-tabs-border';
+ @import 'blocks/navigation/navigation';
+ @import 'blocks/detail-rev-popup/detail-rev-popup';
+ @import 'blocks/cart/cart';
+ @import 'blocks/order/order';
+ @import 'blocks/cart-success/cart-success';
+/* pages */
+
+@import 'jquery.fancybox.css';
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+html
+{
+	line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+
+.g-ul
+{
+	padding: 0;
+	margin-bottom: 60px;
+	.g-li
+	{
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 150%;
+		color: #424242;
+		&:not(:last-child){margin-bottom: 25px;}
+	}
+	.g-li--inner
+	{
+		.g-li
+		{
+			&:not(:last-child){margin-bottom: 4px;}
+		}
+	}
+}
+.g__descr
+{
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 150%;
+	color: #424242;
+	margin-bottom: 60px;
+}
+.g-title
+{
+	span
+	{
+		color:#424242;
+		font-weight: bold;
+	}
+}
+
+body .audiojs
+		{
+			background-image: none;
+			background-color: transparent;
+			box-shadow: none;
+			overflow: visible;
+			width: 100%;
+			height: 57px;
+		}
+		body .reviews .audiojs 
+		{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		body .audiojs .play-pause
+		{
+			width: 36px;
+			height: 36px;
+			padding: 0;
+			border: 0 none;
+		}
+		body .audiojs .play,
+		body .audiojs.playing .pause
+		{
+			background-image: url('../src/assets/img/i-play.svg');
+			background-color: transparent;
+			width: 36px;
+			height: 36px;
+			background-size: contain;
+			background-position: 0 0;
+		}
+		body .audiojs .scrubber
+		{
+			margin: 0;
+			margin-left: 10px;
+			width: calc(100% - 46px);
+			height: 36px;
+			background-color: transparent;
+			background-image: url('../src/assets/img/i-scrubber.svg');
+			background-position: left top;
+			background-repeat: repeat-x;
+			border: 0 none;
+			cursor: pointer;
+		}
+		body .audiojs .progress
+		{
+			height: 100%;
+			background-color: transparent;
+			background-image: url('../src/assets/img/i-scrubber-a.svg');
+			background-position: left top;
+			background-repeat: repeat-x;
+		}
+		body .audiojs.playing .pause
+		{
+			background-image: url('../src/assets/img/i-pause.svg');
+		}
+		body .audiojs .loaded
+		{
+			display: none;
+		}
+		body .audiojs .time
+		{
+			float: none;
+			overflow: hidden;
+			clear: both;
+			height: auto;
+			line-height: 1;
+			border: 0 none;
+			padding: 0;
+			font-size: 12px;
+			color: #828181;
+			text-shadow: none;
+			padding-top: 5px;
+			margin-left: 46px;
+			text-align: left;
+		}
+		body .audiojs .time em
+		{
+			color: inherit;
+		}
+
+body 
+{
+	opacity: 1 !important;
+}

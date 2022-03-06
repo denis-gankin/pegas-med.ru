@@ -1,0 +1,21 @@
+<div class="g-select _select test">
+	<input type="hidden" class="_selected-value" />
+	<div class="g-select__selected">
+		{# onmouseover="pegas.gSelect.open(this)" onmouseleave="pegas.gSelect.close()" #}
+		{% include "assets/img/place.svg" %}
+		<div class="g-select__selected-name _selected-text">г.Благовещенск,ул.Больничная</div>
+		<div class="g-select__arrow">
+			{% include "assets/img/arrod-down.svg" %}
+		</div>
+		<div class="g-select__list _options">
+			<ul class="g-select__items">
+				<li data-value="code-Благовещенск" class="g-select__item _option g-select__item--active" onclick="pegas.gSelect.selecttItemPhone(this)" data-phone="7 (4162) 211 700">г.Благовещенск,ул.Больничная</li>
+				<li data-value="code-Благовещенск" class="g-select__item _option" onclick="pegas.gSelect.selecttItemPhone(this)" data-phone="7 (4162) 211 710">г.Благовещенск,ул.Ленина</li>
+				<li data-value="code-Благовещенск" class="g-select__item _option" onclick="pegas.gSelect.selecttItemPhone(this)" data-phone="7 (4162) 211 701">г.Благовещенск,ул.Шевченко</li>
+				<li data-value="code-Благовещенск" class="g-select__item _option" onclick="pegas.gSelect.selecttItemPhone(this)" data-phone="7 (4162) 210 700">г.Благовещенск,ул.Шимановского</li>
+				<li data-value="code-Белогорск" class="g-select__item _option" onclick="pegas.gSelect.selecttItemPhone(this)" data-phone="7 (4162) 201 700">г.Белогорск,ул.Кирова</li>
+				<li data-value="code-Свободный" class="g-select__item _option" onclick="pegas.gSelect.selecttItemPhone(this)" data-phone="7 (4162) 011 700">г.Свободный,ул.Кручинина</li>
+			</ul>
+		</div>
+	</div>
+</div>

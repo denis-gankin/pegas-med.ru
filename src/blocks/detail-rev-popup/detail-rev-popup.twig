@@ -1,0 +1,93 @@
+<div class="detail-rev-popup" style="display:none">
+	<div class="detail-rev-popup__content  _popup-content">
+		<div class="detail-rev-popup__content-close" onclick="pegas.gPopup.close()">
+			{% include "assets/img/close.svg" %}
+		</div>
+		<h2 class="detail-rev-popup__content-title">для того, чтобы оставить <span>свой отзыв</span> заполните данные ниже</h2>
+		<form class="detail-rev-popup__content-form" onsubmit="return pegas.detailRevPopup.submit(this)">
+			<div class="detail-rev-popup__content-flex">
+				<label class="detail-rev-popup__content-label _field" data-call="empty">
+					<span class="detail-rev-popup__content-name">Ваши контактные данные</span>
+					<input type="text" placeholder="Введите имя">
+				</label>
+				<label class="detail-rev-popup__content-label _field" data-code="phone" data-call="empty phone">
+					<input type="text" placeholder="Введите телефон" class="_phone-mask">
+				</label>
+				<label class="detail-rev-popup__content-label _field" data-code="email" data-call="empty email">
+					<input type="text" placeholder="Введите email">
+				</label>
+				<div class="g-select _select _field" data-code="selector" data-call="selector">
+					<input type="hidden" class="_selected-value"/>
+					<div class="g-select__selected" onclick="pegas.gSelect.toggle(this)">
+						<div class="g-select__selected-name _selected-text">Ваш пол</div>
+						<div class="g-select__arrow">
+							{% include "assets/img/arrod-down.svg" %}
+						</div>
+					</div>
+					<div class="g-select__list _options">
+						<ul class="g-select__items">
+							<li data-value="code-pol" class="g-select__item _option g-select__item--active" onclick="pegas.gSelect.selecttItem(this)">Ваш пол</li>
+							<li data-value="code-man" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">Мужской</li>
+							<li data-value="code-woman" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">Женский</li>
+						</ul>
+					</div>
+				</div>
+				<div class="detail-rev-popup__ocenka">
+					<span class="detail-rev-popup__content-name">Ваши контактные данные</span>
+					<div class="detail-rev-popup__stars">
+						<button>{% include "assets/img/Star 1.svg" %}</button>
+						<button>{% include "assets/img/Star 1.svg" %}</button>
+						<button>{% include "assets/img/Star 1.svg" %}</button>
+						<button>{% include "assets/img/Star 1.svg" %}</button>
+						<button>{% include "assets/img/Star 1.svg" %}</button>
+					</div>
+				</div>
+			</div>
+			<label class="detail-rev-popup__content-label detail-rev-popup__content-label--textarea _field" data-call="empty">
+				<span class="detail-rev-popup__content-name">Опишите достоинства товара</span>
+				<div class="textarea-custom">
+					<textarea></textarea>
+				</div>
+			</label>
+			<label class="detail-rev-popup__content-label detail-rev-popup__content-label--textarea _field" data-call="empty">
+				<span class="detail-rev-popup__content-name">Опишите недостатки товара</span>
+				<div class="textarea-custom">
+					<textarea></textarea>
+				</div>
+			</label>
+			<label class="detail-rev-popup__content-label detail-rev-popup__content-label--textarea _field" data-call="empty">
+				<span class="detail-rev-popup__content-name">Коментарии о товаре</span>
+				<div class="textarea-custom">
+					<textarea></textarea>
+				</div>
+			</label>
+			<div class="detail-rev-popup__footer">
+				<input type="submit" class="questions__btn detail-rev-popup__btn" value="Отправить отзыв">
+				<label class="g-checkbox g-checkbox--label _field" data-call="checked">
+					<input type="checkbox" name="checkbox" class="g-checkbox__input">
+					<div class="g-checkbox__body">
+						<span class="g-checkbox__box"></span>
+						<div class="g-checkbox__text">
+							Отправляя заявку, Вы соглашаетесь на обработку <a href="#">персональных данных</a>
+						</div>
+					</div>
+				</label>
+			</div>
+		</form>
+		<div class="success">
+			{% include 'assets/img/checked.svg' %}
+			<h2 class="success__title">Спасибо вам за <span>оценку нашего товара!</span></h2>
+			<p class="success__descr">В ближайшее время Ваш отзыв будет добавлен нам на сайт</p>
+			<a href="#" class="success__link">Перейти в каталог</a>
+			<span class="success__abs">Ждем Вас в наших соцсетях</span>
+			<div class="success__flex">
+				<a href="https://www.instagram.com/pegas_orto/">{% include 'assets/img/inst.svg' %}</a>
+				<a href="https://ok.ru/profile/583969502001">{% include 'assets/img/odnok.svg' %}</a>
+				<a href="https://www.instagram.com/bereginya_blag/">{% include 'assets/img/inst.svg' %}</a>
+			</div>
+		</div>
+	</div>
+	<div class="error-message">
+		Некоторые поля не заполнены или заполнены некорректно
+	</div>
+</div>
