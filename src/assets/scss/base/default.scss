@@ -350,20 +350,23 @@ label.g-radio--btn
 	margin-bottom: 60px;
 	img{margin-bottom: 60px;}
 }
+.not-found img
+{
+	max-width: 400px;
+}
 .not-found__title
 {
 	font-weight: 600;
-	font-size: 48px;
-	line-height: 65px;
+	font-size: 36px;
+	line-height: 1.5;
 	color: #424242;
 	margin: 0;
-	margin-bottom: 30px;
 }
 .not-found__descr
 {
 	font-weight: normal;
-	font-size: 36px;
-	line-height: 49px;
+	font-size: 24px;
+	line-height: 1.5;
 	color: #424242;
 	a
 	{

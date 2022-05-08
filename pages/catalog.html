@@ -290,41 +290,12 @@
 				</li>
 			</ul>
 			<h2 class="catalog__title about__title">ортопедическая обувь</h2>
-			<div class="catalog-sort row">
-				<div class="catalog-sort__first row col-xxl-6 col-xl-8 col-md-6">
-					<a href="#" class="catalog-sort__btn col-xl-6 col-lg-6 col-md-6">Каталог</a>
-					<label class="catalog-sort__label col-xl-6 col-lg-6">
-						<input type="text" placeholder="Поиск товара">
-						<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M24.2011 22.771L18.251 16.5827C19.7809 14.7641 20.6191 12.4759 20.6191 10.0937C20.6191 4.52814 16.091 0 10.5254 0C4.95978 0 0.431641 4.52814 0.431641 10.0937C0.431641 15.6593 4.95978 20.1875 10.5254 20.1875C12.6148 20.1875 14.6059 19.5573 16.3082 18.361L22.3035 24.5963C22.554 24.8565 22.8911 25 23.2523 25C23.5941 25 23.9185 24.8697 24.1647 24.6327C24.6878 24.1293 24.7045 23.2946 24.2011 22.771ZM10.5254 2.63315C14.6392 2.63315 17.986 5.97988 17.986 10.0937C17.986 14.2076 14.6392 17.5543 10.5254 17.5543C6.41152 17.5543 3.06479 14.2076 3.06479 10.0937C3.06479 5.97988 6.41152 2.63315 10.5254 2.63315Z" fill="white" />
-						</svg>
-					</label>
-				</div>
-				<div class="catalog-sort__flex col-xxl-5 col-xl-4">
-					<span class="d-none d-xxl-block">Сортировать</span>
-					<div class="g-select _select">
-						<input type="hidden" class="_selected-value" />
-						<div class="g-select__selected" onclick="pegas.gSelect.toggle(this)">
-							<div class="g-select__selected-name _selected-text">Сначала популярные</div>
-							<div class="g-select__arrow">
-								<svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M14.8003 0.6088C14.5341 0.342573 14.1023 0.342528 13.8361 0.608846L7.50016 6.94489L1.16393 0.6088C0.897704 0.342573 0.465977 0.342528 0.199705 0.608846C-0.0665682 0.875119 -0.0665682 1.3068 0.199705 1.57307L7.01807 8.39125C7.14593 8.51912 7.31934 8.59094 7.50016 8.59094C7.68098 8.59094 7.85443 8.51907 7.98225 8.39121L14.8002 1.57303C15.0666 1.3068 15.0666 0.875073 14.8003 0.6088Z" fill="white" />
-								</svg>
-							</div>
-						</div>
-						<div class="g-select__list _options">
-							<ul class="g-select__items">
-								<li data-value="code-popular" class="g-select__item _option g-select__item--active" onclick="pegas.gSelect.selecttItem(this)">Сначала популярные</li>
-								<li data-value="code-lowerPrice" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">По ценам от низких</li>
-								<li data-value="code-highPrice" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">По ценам от высоких</li>
-								<li data-value="code-mark" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">По оценке покупателей</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+
 			<div class="catalog__content row">
 				<div class="catalog-sidebar col-xl-3">
+					<div class="catalog-sort__first row">
+						<span class="catalog-sort__btn col-12">Каталог</span>
+					</div>
 					<ul class="catalog-sidebar__list">
 						<li class="catalog-sidebar__item" onclick="pegas.catalogSidebar.toggle(this)">
 							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -484,6 +455,38 @@
 					</ul>
 				</div>
 				<div class="catalog__content-items col-xl-9">
+					<div class="catalog-sort row">
+						<div class="catalog-sort__first row col-xxl-4 col-xl-5 col-md-6">
+							<label class="catalog-sort__label col-12">
+								<input type="text" placeholder="Поиск товара">
+								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M24.2011 22.771L18.251 16.5827C19.7809 14.7641 20.6191 12.4759 20.6191 10.0937C20.6191 4.52814 16.091 0 10.5254 0C4.95978 0 0.431641 4.52814 0.431641 10.0937C0.431641 15.6593 4.95978 20.1875 10.5254 20.1875C12.6148 20.1875 14.6059 19.5573 16.3082 18.361L22.3035 24.5963C22.554 24.8565 22.8911 25 23.2523 25C23.5941 25 23.9185 24.8697 24.1647 24.6327C24.6878 24.1293 24.7045 23.2946 24.2011 22.771ZM10.5254 2.63315C14.6392 2.63315 17.986 5.97988 17.986 10.0937C17.986 14.2076 14.6392 17.5543 10.5254 17.5543C6.41152 17.5543 3.06479 14.2076 3.06479 10.0937C3.06479 5.97988 6.41152 2.63315 10.5254 2.63315Z" fill="white" />
+								</svg>
+							</label>
+						</div>
+						<div class="catalog-sort__flex col-xxl-8 col-xl-7">
+							<span class="d-none d-xxl-block">Сортировать</span>
+							<div class="g-select _select">
+								<input type="hidden" class="_selected-value" />
+								<div class="g-select__selected" onclick="pegas.gSelect.toggle(this)">
+									<div class="g-select__selected-name _selected-text">Сначала популярные</div>
+									<div class="g-select__arrow">
+										<svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M14.8003 0.6088C14.5341 0.342573 14.1023 0.342528 13.8361 0.608846L7.50016 6.94489L1.16393 0.6088C0.897704 0.342573 0.465977 0.342528 0.199705 0.608846C-0.0665682 0.875119 -0.0665682 1.3068 0.199705 1.57307L7.01807 8.39125C7.14593 8.51912 7.31934 8.59094 7.50016 8.59094C7.68098 8.59094 7.85443 8.51907 7.98225 8.39121L14.8002 1.57303C15.0666 1.3068 15.0666 0.875073 14.8003 0.6088Z" fill="white" />
+										</svg>
+									</div>
+								</div>
+								<div class="g-select__list _options">
+									<ul class="g-select__items">
+										<li data-value="code-popular" class="g-select__item _option g-select__item--active" onclick="pegas.gSelect.selecttItem(this)">Сначала популярные</li>
+										<li data-value="code-lowerPrice" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">По ценам от низких</li>
+										<li data-value="code-highPrice" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">По ценам от высоких</li>
+										<li data-value="code-mark" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">По оценке покупателей</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="catalog__content-items-block row">
 						<div class="catalog-item-wrapper col-xl-4">
 							<div class="catalog-item catalog-item--sale">
