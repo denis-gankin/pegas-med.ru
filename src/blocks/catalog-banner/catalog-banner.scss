@@ -1,6 +1,6 @@
 .catalog-banner
 {
-	padding: 120px 80px;
+	padding: 80px 50px;
 	background-image: url('img/jakie-buty.png');
 	background-color: #F5F7FA;
 	background-repeat: no-repeat;
@@ -8,22 +8,23 @@
 	border-radius: 25px;
 	margin-bottom: 25px;
 	margin-top: 25px;
+	background-size: contain;
 }
 .catalog-banner__title
 {
 	font-weight: normal;
-	font-size: 48px;
-	line-height: 84px;
+	font-size: 38px;
+	line-height: 1.75;
 	color: #6195BE;
 	font-family:$third-font;
 	margin: 0;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .catalog-banner__descr
 {
 	font-weight: normal;
-	font-size: 30px;
-	line-height: 41px;
+	font-size: 24px;
+	line-height: 1.3;
 	color: #424242;
 	margin: 0;
 	margin-bottom: 40px;
@@ -36,7 +37,7 @@
 .catalog-banner__small
 {
 	font-weight: normal;
-	font-size: 20px;
-	line-height: 27px;
+	font-size: 16px;
+	line-height: 1.2;
 	color: #424242;
 }

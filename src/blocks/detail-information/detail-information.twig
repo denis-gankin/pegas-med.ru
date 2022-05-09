@@ -1,9 +1,9 @@
-<div class="detail-information">
-	<div class="detail-information__image">
+<div class="detail-information row">
+	<div class="detail-information__image col-xl-5">
 		<img class="detail-information__logo" src="img/detail-logo.png" alt="">
-		<img class="detail-information__big"  src="img/legens.png" alt="">
+		<div class="detail-information__big_img" style="background-image: url(img/509f5d7ed38421156e95d6ee38e23ecc.jpg)"></div>
 	</div>
-	<div class="detail-information__info">
+	<div class="detail-information__info col-xl-7">
 		<h2 class="detail-information__title">
 			Компрессионные чулки <a href="#">duomed</a> 1 класс компрессии с открытым носком и резинкой на силиконовой основе
 		</h2>
@@ -49,22 +49,25 @@
 		</ul>
 		<div class="detail-information__params">
 			<span class="detail-information__params-name">Длина</span>
-			<div class="g-select _select">
-				<input type="hidden" class="_selected-value" />
-				<div class="g-select__selected" onclick="pegas.gSelect.toggle(this)">
-					<div class="g-select__selected-name _selected-text">Стандартная</div>
-					<div class="g-select__arrow">
-						{% include "assets/img/arrod-down.svg" %}
+			<div class="d-inline-block">
+				<div class="g-select _select">
+					<input type="hidden" class="_selected-value" />
+					<div class="g-select__selected" onclick="pegas.gSelect.toggle(this)">
+						<div class="g-select__selected-name _selected-text">Стандартная</div>
+						<div class="g-select__arrow">
+							{% include "assets/img/arrod-down.svg" %}
+						</div>
+					</div>
+					<div class="g-select__list _options">
+						<ul class="g-select__items">
+							<li data-value="code-Благовещенск" class="g-select__item _option g-select__item--active" onclick="pegas.gSelect.selecttItem(this)">Стандартная</li>
+							<li data-value="code-Благовещенск" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">полустандартная</li>
+							<li data-value="code-Благовещенск" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">тестовая</li>
+						</ul>
 					</div>
 				</div>
-				<div class="g-select__list _options">
-					<ul class="g-select__items">
-						<li data-value="code-Благовещенск" class="g-select__item _option g-select__item--active" onclick="pegas.gSelect.selecttItem(this)">Стандартная</li>
-						<li data-value="code-Благовещенск" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">полустандартная</li>
-						<li data-value="code-Благовещенск" class="g-select__item _option" onclick="pegas.gSelect.selecttItem(this)">тестовая</li>
-					</ul>
-				</div>
 			</div>
+			
 		</div>
 		<div class="detail-information__params">
 			<div class="detail-information__params-head">

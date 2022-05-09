@@ -1,19 +1,19 @@
-<div class="catalog-item-wrapper col-md-6 col-lg-4 col-xl-3">
-	<div class="catalog-item catalog-item--sale">
-		<div class="catalog-item__sale">
-			15%
+<div class="catalog-item catalog-item--sale">
+	<div class="catalog-item__sale">
+		15%
+	</div>
+	<div class="catalog-item__head">
+		<img src="img/cataalog-image.png" alt="">
+		<div class="catalog-item__head-btns">
+			<button class="catalog-item__head-btn catalog-item__head-btn--favorite d-flex align-items-center justify-content-center" onclick="pegas.catalogItem.add(this)">
+				{% include 'assets/img/favorite-i.svg' %}
+			</button>
+			<button class="catalog-item__head-btn catalog-item__head-btn--cart d-flex align-items-center justify-content-center" onclick="pegas.catalogItem.add(this)">
+				{% include 'assets/img/cart-i.svg' %}
+			</button>
 		</div>
-		<div class="catalog-item__head">
-			<img src="img/cataalog-image.png" alt="">
-			<div class="catalog-item__head-btns">
-				<button class="catalog-item__head-btn catalog-item__head-btn--favorite" onclick="pegas.catalogItem.add(this)">
-					{% include 'assets/img/favorite.svg' %}
-				</button>
-				<button class="catalog-item__head-btn catalog-item__head-btn--cart" onclick="pegas.catalogItem.add(this)">
-					{% include 'assets/img/cart.svg' %}
-				</button>
-			</div>
-		</div>
+	</div>
+	<div class="px-3">
 		<span class="catalog-item__name">Арт.LM-708.050</span>
 		<a href="detail.html" class="catalog-item__link">
 			<span>Подробнее о товаре</span>
@@ -31,6 +31,9 @@
 				{% include 'assets/img/star.svg' %}
 			{% endfor %}
 		</div>
-		<button class="catalog-item__btn" onclick="pegas.catalogItem.open('catalog-item-popup',this)">Примерить в салоне</button>
+		<div class="text-center">
+			<button class="catalog-item__btn" onclick="pegas.catalogItem.open('catalog-item-popup',this)">Примерить в салоне</button>
+		</div>
 	</div>
+	
 </div>
