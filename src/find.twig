@@ -15,7 +15,9 @@
 		</div>
 		<div class="catalog-list row">
 			{% for item in 0..4 %}
-				{% include '/blocks/catalog-item/catalog-item.twig' %}
+				<div class="catalog-item-wrapper col-xl-3">
+					{% include '/blocks/catalog-item/catalog-item.twig' %}
+				</div>
 			{% endfor %}
 		</div>
 		{% include '/blocks/catalog-item-popup/catalog-item-popup.twig' %}

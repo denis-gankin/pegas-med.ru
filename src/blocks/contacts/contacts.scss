@@ -15,11 +15,11 @@ h2.contacts__title
 .contacts__descr
 {
 	font-weight: 600;
-	font-size: 24px;
-	line-height: 33px;
+	font-size: 20px;
+	line-height: 1;
 	color: #424242;
 	margin: 0;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .contacts__table
 {
@@ -38,10 +38,10 @@ h2.contacts__title
 {
 	display: flex;
 	align-items: center;
-	justify-content: end;
+	justify-content: start;
 	font-weight: normal;
-	font-size: 23px;
-	line-height: 33px;
+	font-size: 18px;
+	line-height: 1.25;
 	color: #424242;
 	svg
 	{
